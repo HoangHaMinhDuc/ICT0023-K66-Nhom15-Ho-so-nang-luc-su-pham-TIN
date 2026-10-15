@@ -3,7 +3,7 @@
 
 Bài tập lớn ICT0023, K66. Website tĩnh dùng HTML, CSS, Bootstrap, JavaScript, jQuery; chạy hoàn toàn trên trình duyệt.
 
-- **Website:** https://TEN-TAI-KHOAN.github.io/ICT0023-K66-Nhom15-HoSoNangLucSuPhamTin/ (cập nhật sau khi bật Pages)
+- **Website:** https://TEN-TAI-KHOAN.github.io/ICT0023-K66-Nhom15-HosonanglucsuphamTIN/ (cập nhật sau khi bật Pages)
 - **Người dùng:** sinh viên chuẩn bị thực tập và tuyển dụng.
 
 | Họ tên | GitHub | Vai trò | Nhiệm vụ |
