@@ -11,10 +11,10 @@ Website tĩnh dùng HTML, CSS, Bootstrap 5.3, JavaScript, jQuery 3.7; chạy ho�
 ## Thành viên
 | Họ tên | GitHub | Vai trò | Nhiệm vụ chính |
 |---|---|---|---|
-| Khúc Trọng Nam | (điền) | Nhóm trưởng, Driver | Dựng khung giao diện, thiết lập quy trình Git, đảm bảo mã chạy ổn định |
-| Ngô Thuỳ Ngân | (điền) | Tester | Kiểm thử giao diện, responsive, chính tả; rà soát nội dung |
-| Hoàng Hà Minh Đức | HoangHaMinhDuc | Coordinator | Lập kế hoạch tiến độ, chia việc, kết nối thành viên |
-| Hà Tuấn Hưng | (điền) | Navigator | (điền) |
+| Khúc Trọng Nam | namkt.k66sptin@utb.edu.vn | Nhóm trưởng, Driver | Dựng khung giao diện, thiết lập quy trình Git, đảm bảo mã chạy ổn định |
+| Ngô Thuỳ Ngân | ngannt.k66sptin@utb.edu.vn | Tester | Kiểm thử giao diện, responsive, chính tả; rà soát nội dung |
+| Hoàng Hà Minh Đức | HoangHaMinhDuc | Coodinator | Lập kế hoạch tiến độ, chia việc, kết nối thành viên |
+| Hà Tuấn Hưng | hunght.k66sptin@utb.edu.vn | Navigator | Chỉ dẫn, cảnh báo rủi ro, kiểm định chất lượng |
 
 Chi tiết từng người, issue/PR: xem `CONTRIBUTIONS.md`.
 
