@@ -3,8 +3,8 @@
 Bài tập lớn học phần ICT0023 – Thiết kế Web, lớp K66 ĐHSP Tin học, Trường Đại học Tây Bắc. Giảng viên hướng dẫn: Nguyễn Duy Hiếu.
 Website tĩnh dùng HTML, CSS, Bootstrap 5.3, JavaScript, jQuery 3.7; chạy hoàn toàn trên trình duyệt, không backend.
 
-- **Repository:** https://github.com/HoangHaMinhDuc/ICT0023-K66-Nhom15-HoSoNangLucSuPhamTin
-- **Website (GitHub Pages):** https://hoanghaminhduc.github.io/ICT0023-K66-Nhom15-HoSoNangLucSuPhamTin/
+- **Repository:** https://github.com/HoangHaMinhDuc/ICT0023-K66-Nhom15-HosonanglucsuphamTIN
+- **Website (GitHub Pages):** https://hoanghaminhduc.github.io/ICT0023-K66-Nhom15-HosonanglucsuphamTIN/
 - **Người dùng:** sinh viên sư phạm Tin chuẩn bị thực tập và nơi tuyển dụng/thực tập xem nhanh năng lực của nhóm.
 - **Nhu cầu nhỏ công cụ giải quyết:** nhập thông tin cá nhân, xem trước và in hồ sơ một trang A4 ngay trên trình duyệt.
 
