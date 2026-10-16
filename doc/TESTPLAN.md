@@ -94,3 +94,13 @@ Người lập: Tester
 * **TC-07 (Biên 4 - Chuỗi văn bản cực dài):**
   - Thao tác: Dán đoạn văn bản hơn 1.000 ký tự vào ô Kỹ năng hoặc Mục tiêu.
   - Kết quả mong đợi: Khung hiển thị hồ sơ tự động xuống dòng, không làm vỡ bố cục giao diện hay tràn viền trang web.
+---
+
+## 4. Kết quả kiểm thử giao diện & Tiêu chuẩn mã (Accessibility & W3C)
+- **Điều hướng bằng bàn phím:**
+  - Sử dụng phím `Tab` và `Shift + Tab` di chuyển tuần tự qua toàn bộ thanh Navbar và các khối nội dung.
+  - Trạng thái `:focus` hiển thị viền rõ ràng, không bị mất tiêu điểm.
+  - Phím `Enter` kích hoạt chính xác các liên kết chuyển trang.
+- **Kiểm tra chuẩn HTML (W3C Validator):**
+  - Đã kiểm tra tệp `skills.html` qua validator.w3.org.
+  - Kết quả: Đạt chuẩn cú pháp HTML5, không có lỗi thẻ (Error), đảm bảo đầy đủ thuộc tính `alt` cho ảnh và phân cấp tiêu đề `h1`, `h2` hợp lệ.
