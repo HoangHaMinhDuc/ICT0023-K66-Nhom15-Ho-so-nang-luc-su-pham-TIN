@@ -31,5 +31,4 @@ Không dùng ảnh học sinh thật. Ảnh đại diện trong công cụ Tạo
 | Công cụ | Ngày | Prompt chính | Tiếp nhận / loại bỏ | Cách kiểm chứng |
 | (điền: công cụ tạo biểu tượng) | (điền) | Tạo biểu tượng sách–bút, hồ sơ, mã code theo màu xanh phấn/vàng | Nhận 4 ảnh minh họa `icondayhoc`, `iconlaptrinh`, `iconhoso`, `cvtrong`; loại bản không khớp bảng màu | Xem trên trang, kiểm tra hiển thị 56×56 và `alt` |
 | Claude (Anthropic) | 15/10/2026 | Rà soát yêu cầu đề bài và viết lại `README.md`, `SOURCES.md`, `CONTRIBUTIONS.md` | Nhận khung và câu chữ tài liệu; loại các mô tả không có trong mã (chế độ tối, `tools/`, `sanpham7-8`) | Nhóm đối chiếu từng mục với mã nguồn và ảnh chụp màn hình |
-$$\rightarrow \text{\textbf{Sửa thành:}} \quad \text{
-"Mã nguồn website do nhóm tự viết, AI c hỗ trợ rà soát cấu trúc tài liệu và tham khảo cú pháp."}$$
+"Mã nguồn website do nhóm tự viết, AI c hỗ trợ rà soát cấu trúc tài liệu và tham khảo cú pháp."
