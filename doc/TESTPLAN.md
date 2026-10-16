@@ -43,8 +43,6 @@ Người thực hiện: Tester
 | **TC08** | Kiểm tra Console | Thao tác toàn bộ luồng chính | Không có thông báo lỗi đỏ (Error) trong tab Console | Đã kiểm |
 
 # KẾ HOẠCH KIỂM THỬ (TEST PLAN) - GIAI ĐOẠN v0.1
-Dự án: Hồ sơ năng lực nhóm sinh viên Sư phạm Tin Học (Nhóm 15)
-Người lập: Tester
 
 ---
 
@@ -95,8 +93,11 @@ Người lập: Tester
   - Thao tác: Dán đoạn văn bản hơn 1.000 ký tự vào ô Kỹ năng hoặc Mục tiêu.
   - Kết quả mong đợi: Khung hiển thị hồ sơ tự động xuống dòng, không làm vỡ bố cục giao diện hay tràn viền trang web.
 ---
+# KẾ HOẠCH KIỂM THỬ (TEST PLAN) - GIAI ĐOẠN v0.1
 
-## 4. Kết quả kiểm thử giao diện & Tiêu chuẩn mã (Accessibility & W3C)
+---
+
+## 1. Kết quả kiểm thử giao diện & Tiêu chuẩn mã (Accessibility & W3C)
 - **Điều hướng bằng bàn phím:**
   - Sử dụng phím `Tab` và `Shift + Tab` di chuyển tuần tự qua toàn bộ thanh Navbar và các khối nội dung.
   - Trạng thái `:focus` hiển thị viền rõ ràng, không bị mất tiêu điểm.
@@ -106,7 +107,7 @@ Người lập: Tester
   - Kết quả: Đạt chuẩn cú pháp HTML5, không có lỗi thẻ (Error), đảm bảo đầy đủ thuộc tính `alt` cho ảnh và phân cấp tiêu đề `h1`, `h2` hợp lệ.
 ---
 
-## 5. Báo cáo kiểm thử Responsive & Bố cục giao diện (F12 Device Toolbar)
+## 2. Báo cáo kiểm thử Responsive & Bố cục giao diện (F12 Device Toolbar)
 - **Thiết bị & Kích thước kiểm thử:**
   - Mobile: 375px (iPhone 17e/14 ProMax/Xiao mi)
   - Tablet: 768px (iPad Mini/Air)
