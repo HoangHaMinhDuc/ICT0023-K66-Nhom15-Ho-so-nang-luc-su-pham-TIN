@@ -36,4 +36,5 @@ Không sử dụng mã nguồn bên ngoài. Mã HTML/CSS/JS do nhóm tự viết
 |---|---|---|---|---|
 | ChatGPT / Copilot | 15/10/2026 | Tạo biểu tượng sách–bút, hồ sơ, mã code theo màu xanh phấn/vàng | Nhận 4 ảnh minh họa `icondayhoc`, `iconlaptrinh`, `iconhoso`, `cvtrong`; loại bản không khớp bảng màu | Kiểm tra hiển thị thực tế 56×56 và thẻ `alt` |
 | Claude (Anthropic) | 15/10/2026 | Rà soát yêu cầu đề bài và viết lại `README.md`, `SOURCES.md`, `CONTRIBUTIONS.md` | Nhận khung và câu chữ tài liệu; loại các mô tả không có trong mã nguồn | Nhóm đối chiếu từng mục với mã nguồn và ảnh chụp màn hình |
-"Mã nguồn website do nhóm tự viết và hoàn thiện, AI chỉ hỗ trợ rà soát cấu trúc tài liệu và gợi ý giải pháp"
+
+*Mã nguồn website do nhóm tự viết và hoàn thiện, AI chỉ hỗ trợ rà soát cấu trúc tài liệu và gợi ý giải pháp.*
