@@ -2,15 +2,11 @@
 Chủ đề: Hồ sơ năng lực nhóm sinh viên Sư phạm Tin Học
 Người thực hiện: Tester
 
----
-
 ## 1. Mục tiêu kiểm thử
 - Đảm bảo website hoạt động ổn định trên trình duyệt máy tính và điện thoại.
 - Kiểm tra tính đúng đắn của công cụ sinh hồ sơ cá nhân (form validate, in/PDF, nút dùng thử, nút đặt lại).
 - Đảm bảo không phát sinh lỗi trong Developer Console (0 console error) ở luồng sử dụng chính.
 - Thử nghiệm đầy đủ ít nhất 3 trường hợp biên theo yêu cầu bài tập lớn.
-
----
 
 ## 2. Phạm vi kiểm thử
 1. **Kiểm thử giao diện (UI/UX & Responsive):**
@@ -26,8 +22,6 @@ Người thực hiện: Tester
    - Biên 2: Nhập dữ liệu sai định dạng (Email thiếu @, số điện thoại chứa chữ, chuỗi ký tự quá dài > 1000 ký tự).
    - Biên 3: Bấm nút "Đặt lại" sau khi đã tạo hồ sơ -> giao diện phải làm sạch hoàn toàn về trạng thái ban đầu.
    - Nút "Dùng thử" -> nạp đầy đủ dữ liệu mẫu chuẩn và hiển thị ngay bản xem trước.
-
----
 
 ## 3. Bảng thiết kế ca kiểm thử sơ bộ (Test Cases)
 
@@ -46,13 +40,9 @@ Người thực hiện: Tester
 Dự án: Hồ sơ năng lực nhóm sinh viên Sư phạm Tin Học (Nhóm 15)
 Người lập: Tester
 
----
-
 ## 1. Chuẩn hóa dữ liệu tĩnh đầu vào
 - **Tài nguyên ảnh đại diện:** 4 ảnh chân dung tỉ lệ vuông 1:1, lưu tại thư mục `images/`.
 - **Trích ngang kỹ năng:** Đã chuẩn hóa danh sách kỹ năng chuyên môn và vai trò 4 thành viên để nạp vào `data.js` và `thanh-vien.html`.
-
----
 
 ## 2. Danh mục các trường dữ liệu Form tạo hồ sơ cá nhân (`cong-cu.html`)
 | STT | Tên trường | Thuộc tính ID | Kiểu dữ liệu | Bắt buộc | Tiêu chí hợp lệ |
@@ -65,8 +55,6 @@ Người lập: Tester
 | 6 | Mục tiêu nghề nghiệp | `input-muctieu` | Textarea | Có | Đoạn văn ngắn 20 - 200 từ |
 | 7 | Kỹ năng nổi bật | `input-kynang` | Textarea | Có | Ngăn cách bằng dấu phẩy |
 | 8 | Quá trình học tập | `input-hocvan` | Textarea | Có | Tối thiểu ghi thông tin lớp, ngành, trường |
-
----
 
 ## 3. Bộ ca kiểm thử (Test Cases) cho giai đoạn nhập liệu Form
 
