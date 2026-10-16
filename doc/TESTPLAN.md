@@ -82,3 +82,33 @@ Người lập: Tester
 * **TC-07 (Biên 4 - Chuỗi văn bản cực dài):**
   - Thao tác: Dán đoạn văn bản hơn 1.000 ký tự vào ô Kỹ năng hoặc Mục tiêu.
   - Kết quả mong đợi: Khung hiển thị hồ sơ tự động xuống dòng, không làm vỡ bố cục giao diện hay tràn viền trang web.
+
+# KẾ HOẠCH KIỂM THỬ GIAI ĐOẠN v0.2:
+
+## 1. Kết quả kiểm thử giao diện & Tiêu chuẩn mã (Accessibility & W3C)
+- **Điều hướng bằng bàn phím:**
+  - Sử dụng phím `Tab` và `Shift + Tab` di chuyển tuần tự qua toàn bộ thanh Navbar và các khối nội dung.
+  - Trạng thái `:focus` hiển thị viền rõ ràng, không bị mất tiêu điểm.
+  - Phím `Enter` kích hoạt chính xác các liên kết chuyển trang.
+- **Kiểm tra chuẩn HTML (W3C Validator):**
+  - Đã kiểm tra tệp `skills.html` qua validator.w3.org.
+  - Kết quả: Đạt chuẩn cú pháp HTML5, không có lỗi thẻ (Error), đảm bảo đầy đủ thuộc tính `alt` cho ảnh và phân cấp tiêu đề `h1`, `h2` hợp lệ.
+
+## 2. Báo cáo kiểm thử Responsive & Bố cục giao diện (F12 Device Toolbar)
+- **Thiết bị & Kích thước kiểm thử:**
+  - Mobile: 375px (iPhone 17e/14 ProMax/Xiao mi)
+  - Tablet: 768px (iPad Mini/Air)
+  - Desktop: >= 1200px
+- **Kết quả rà soát:**
+  - Đã kiểm tra tính co giãn của thanh điều hướng (Navbar Toggle), hệ thống lưới Bootstrap (Grid System) và thanh cuộn ngang.
+  - Danh sách điểm cần tinh chỉnh đã được bàn giao cho Navigator xử lý theo bảng ghi nhận.
+
+# KẾ HOẠCH KIỂM THỬ GIAI ĐOẠN v0.3:
+## 1. Báo cáo kiểm thử tương thích trình duyệt & Tính khả đọc CSS
+- **Môi trường thử nghiệm:**
+  - Trình duyệt: Google Chrome, Microsoft Edge, Cốc Cốc.
+  - Chế độ: Đã kiểm tra trên Chế độ ẩn danh (Incognito/InPrivate) để loại trừ cache và tiện ích mở rộng.
+- **Kết quả kiểm tra CSS & Khả năng đọc (Readability):**
+  - **Độ tương phản:** Màu chữ và nền đạt yêu cầu thị giác, không có hiện tượng chữ chìm vào nền.
+  - **Bố cục văn bản:** Kích thước font chữ rõ ràng, khoảng cách dòng hợp lý, văn bản tự động xuống dòng không bị tràn khung viền thẻ card.
+  - **Tương thích:** Toàn bộ thành phần Bootstrap và CSS tùy biến hiển thị đồng nhất, không phát sinh lỗi lệch giao diện giữa các trình duyệt.
