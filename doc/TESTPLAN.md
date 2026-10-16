@@ -1,5 +1,5 @@
 # KẾ HOẠCH KIỂM THỬ (TEST PLAN) - NHÓM 15
-Chủ đề: Hồ sơ năng lực nhóm sinh viên Sư phạm Tin Học
+Chủ đề: Hồ sơ năng lực nhóm sinh viên Sư phạm Tin Học (Nhóm 15) /
 Người thực hiện: Tester
 
 ## 1. Mục tiêu kiểm thử
@@ -27,14 +27,14 @@ Người thực hiện: Tester
 
 | Mã TC | Chức năng kiểm tra | Dữ liệu đầu vào | Kết quả mong đợi | Trạng thái |
 | :---: | :--- | :--- | :--- | :---: |
-| **TC01** | Bấm nút "Dùng thử" | Click chuột vào nút | Điền tự động thông tin mẫu vào tất cả các ô, sinh bản xem trước ngay lập tức | Chưa kiểm |
-| **TC02** | Bấm nút "Đặt lại" | Form đang có dữ liệu | Form xóa trắng, bản xem trước trở về trạng thái thông báo mặc định | Chưa kiểm |
-| **TC03** | Bỏ trống trường bắt buộc | Để trống Họ tên hoặc Email | Hiện thông báo cảnh báo rõ ràng, không sinh hồ sơ lỗi | Chưa kiểm |
-| **TC04** | Nhập email sai chuẩn | `emailkhongdung` | Báo lỗi định dạng email không hợp lệ | Chưa kiểm |
-| **TC05** | Nhấn nút "In / Xuất PDF" | Hồ sơ đã sinh hợp lệ | Hộp thoại in của trình duyệt hiện ra, ẩn toàn bộ menu, nút bấm và form nhập | Chưa kiểm |
-| **TC06** | Bộ lọc sản phẩm | Chọn năm học "2025-2026" | Chỉ hiển thị các sản phẩm thuộc năm học đã chọn | Chưa kiểm |
-| **TC07** | Tìm kiếm không có kết quả | Từ khóa "xyz123" | Hiển thị thông báo "Không tìm thấy kết quả phù hợp", không bị crash | Chưa kiểm |
-| **TC08** | Kiểm tra Console | Thao tác toàn bộ luồng chính | Không có thông báo lỗi đỏ (Error) trong tab Console | Chưa kiểm |
+| **TC01** | Bấm nút "Dùng thử" | Click chuột vào nút | Điền tự động thông tin mẫu vào tất cả các ô, sinh bản xem trước ngay lập tức | Đã kiểm |
+| **TC02** | Bấm nút "Đặt lại" | Form đang có dữ liệu | Form xóa trắng, bản xem trước trở về trạng thái thông báo mặc định | Đã kiểm |
+| **TC03** | Bỏ trống trường bắt buộc | Để trống Họ tên hoặc Email | Hiện thông báo cảnh báo rõ ràng, không sinh hồ sơ lỗi | Đã kiểm |
+| **TC04** | Nhập email sai chuẩn | `emailkhongdung` | Báo lỗi định dạng email không hợp lệ | Đã kiểm |
+| **TC05** | Nhấn nút "In / Xuất PDF" | Hồ sơ đã sinh hợp lệ | Hộp thoại in của trình duyệt hiện ra, ẩn toàn bộ menu, nút bấm và form nhập | Đã kiểm |
+| **TC06** | Bộ lọc sản phẩm | Chọn năm học "2025-2026" | Chỉ hiển thị các sản phẩm thuộc năm học đã chọn | Đã kiểm |
+| **TC07** | Tìm kiếm không có kết quả | Từ khóa "xyz123" | Hiển thị thông báo "Không tìm thấy kết quả phù hợp", không bị crash | Đã kiểm |
+| **TC08** | Kiểm tra Console | Thao tác toàn bộ luồng chính | Không có thông báo lỗi đỏ (Error) trong tab Console | Đã kiểm |
 
 # KẾ HOẠCH KIỂM THỬ (TEST PLAN) - GIAI ĐOẠN v0.1
 Dự án: Hồ sơ năng lực nhóm sinh viên Sư phạm Tin Học (Nhóm 15)
@@ -74,7 +74,7 @@ Người lập: Tester
   - Thao tác: Để trống các trường bắt buộc (ví dụ Họ tên hoặc Email) và bấm tạo hồ sơ.
   - Kết quả mong đợi: Trình duyệt kích hoạt cảnh báo hợp lệ HTML5/JS (báo đỏ ô trống), không cho phép sinh hồ sơ rỗng.
 * **TC-05 (Biên 2 - Định dạng Email sai):**
-  - Thao tác: Nhập email không chứa ký tự `@` hoặc không có tên miền (ví dụ: `ngannguyen`).
+  - Thao tác: Nhập email không chứa ký tự `@` hoặc không có tên miền (ví dụ: `nguyenvana`).
   - Kết quả mong đợi: Hiển thị thông báo yêu cầu nhập đúng định dạng email.
 * **TC-06 (Biên 3 - Số điện thoại không hợp lệ):**
   - Thao tác: Nhập số điện thoại chứa ký tự chữ cái hoặc độ dài khác 10 số (ví dụ: `098abc`, `12345`).
@@ -112,3 +112,13 @@ Người lập: Tester
   - **Độ tương phản:** Màu chữ và nền đạt yêu cầu thị giác, không có hiện tượng chữ chìm vào nền.
   - **Bố cục văn bản:** Kích thước font chữ rõ ràng, khoảng cách dòng hợp lý, văn bản tự động xuống dòng không bị tràn khung viền thẻ card.
   - **Tương thích:** Toàn bộ thành phần Bootstrap và CSS tùy biến hiển thị đồng nhất, không phát sinh lỗi lệch giao diện giữa các trình duyệt.
+---
+
+## 2. Thiết kế bộ ca kiểm thử đặc biệt cho Form (Edge Cases)
+| STT | Tên ca kiểm thử | Loại dữ liệu | Dữ liệu thử nghiệm (Input) | Kết quả mong đợi (Expected Output) |
+| :---: | :--- | :--- | :--- | :--- |
+| **TC-EDGE-01** | Bỏ trống bắt buộc | Dữ liệu rỗng | Không nhập Họ tên, Email | Báo lỗi cảnh báo trường bắt buộc, không cho phép gửi dữ liệu. |
+| **TC-EDGE-02** | Chuỗi ký tự cực dài | Độ dài biên (Boundary) | Nhập chuỗi 500 ký tự vào ô Tóm tắt bản thân / Mục tiêu | Khung preview tự động xuống dòng (word-wrap), không tràn vỡ thẻ card. |
+| **TC-EDGE-03** | Chống mã độc XSS | Ký tự đặc biệt (Security) | `<script>alert('XSS')</script>`, `<b>Test</b>`, `@#$%^&*()` | Hiển thị dưới dạng chuỗi văn bản an toàn (escaped text), không thực thi mã lệnh HTML/JS. |
+| **TC-EDGE-04** | Sai định dạng Email | Giá trị không hợp lệ | `abc@`, `abc.com`, `abc@gmail` (thiếu phần mở rộng domain) | Trình duyệt kích hoạt cảnh báo sai chuẩn email. |
+| **TC-EDGE-05** | Số điện thoại chứa ký tự | Định dạng số | `0987abc123`, `098-765-432` | Báo lỗi định dạng chỉ chấp nhận đúng 10 chữ số tiêu chuẩn. |
