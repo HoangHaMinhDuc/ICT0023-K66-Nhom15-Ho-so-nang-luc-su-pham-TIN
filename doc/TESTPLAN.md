@@ -42,7 +42,7 @@ Người thực hiện: Tester
 | **TC07** | Tìm kiếm không có kết quả | Từ khóa "xyz123" | Hiển thị thông báo "Không tìm thấy kết quả phù hợp", không bị crash | Đã kiểm |
 | **TC08** | Kiểm tra Console | Thao tác toàn bộ luồng chính | Không có thông báo lỗi đỏ (Error) trong tab Console | Đã kiểm |
 
-# KẾ HOẠCH KIỂM THỬ (TEST PLAN) - GIAI ĐOẠN v0.1
+# KẾ HOẠCH KIỂM THỬ GIAI ĐOẠN v0.1
 
 ---
 
@@ -93,7 +93,8 @@ Người thực hiện: Tester
   - Thao tác: Dán đoạn văn bản hơn 1.000 ký tự vào ô Kỹ năng hoặc Mục tiêu.
   - Kết quả mong đợi: Khung hiển thị hồ sơ tự động xuống dòng, không làm vỡ bố cục giao diện hay tràn viền trang web.
 ---
-# KẾ HOẠCH KIỂM THỬ (TEST PLAN) - GIAI ĐOẠN v0.1
+
+# KẾ HOẠCH KIỂM THỬ GIAI ĐOẠN v0.2:
 
 ---
 
