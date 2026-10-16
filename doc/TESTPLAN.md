@@ -104,3 +104,13 @@ Người lập: Tester
 - **Kiểm tra chuẩn HTML (W3C Validator):**
   - Đã kiểm tra tệp `skills.html` qua validator.w3.org.
   - Kết quả: Đạt chuẩn cú pháp HTML5, không có lỗi thẻ (Error), đảm bảo đầy đủ thuộc tính `alt` cho ảnh và phân cấp tiêu đề `h1`, `h2` hợp lệ.
+---
+
+## 5. Báo cáo kiểm thử Responsive & Bố cục giao diện (F12 Device Toolbar)
+- **Thiết bị & Kích thước kiểm thử:**
+  - Mobile: 375px (iPhone 17e/14 ProMax/Xiao mi)
+  - Tablet: 768px (iPad Mini/Air)
+  - Desktop: >= 1200px
+- **Kết quả rà soát:**
+  - Đã kiểm tra tính co giãn của thanh điều hướng (Navbar Toggle), hệ thống lưới Bootstrap (Grid System) và thanh cuộn ngang.
+  - Danh sách điểm cần tinh chỉnh đã được bàn giao cho Navigator xử lý theo bảng ghi nhận.
