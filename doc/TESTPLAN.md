@@ -122,3 +122,22 @@ Người lập: Tester
 | **TC-EDGE-03** | Chống mã độc XSS | Ký tự đặc biệt (Security) | `<script>alert('XSS')</script>`, `<b>Test</b>`, `@#$%^&*()` | Hiển thị dưới dạng chuỗi văn bản an toàn (escaped text), không thực thi mã lệnh HTML/JS. |
 | **TC-EDGE-04** | Sai định dạng Email | Giá trị không hợp lệ | `abc@`, `abc.com`, `abc@gmail` (thiếu phần mở rộng domain) | Trình duyệt kích hoạt cảnh báo sai chuẩn email. |
 | **TC-EDGE-05** | Số điện thoại chứa ký tự | Định dạng số | `0987abc123`, `098-765-432` | Báo lỗi định dạng chỉ chấp nhận đúng 10 chữ số tiêu chuẩn. |
+
+# KẾ HOẠCH KIỂM THỬ GIAI ĐOẠN v0.4:
+## 1. Bảng ca kiểm thử chi tiết (Test Matrix) & Minh chứng xử lý lỗi
+### 1.1. Ma trận ca kiểm thử (Test Matrix).
+| Mã ca (ID) | Chức năng kiểm thử | Loại kiểm thử | Dữ liệu đầu vào (Input) | Các bước thực hiện | Kết quả mong đợi (Expected Output) | Trạng thái |
+| :---: | :--- | :--- | :--- | :--- | :--- | :---: |
+| **TM-01** | Điền mẫu tự động | Chức năng chính | Bấm nút "Dùng thử" | 1. Mở trang tạo hồ sơ.<br>2. Bấm nút "Dùng thử". | Các ô nhập liệu tự động điền giá trị chuẩn; cập nhật thanh tiến độ %. | **Pass** |
+| **TM-02** | Xóa sạch form | Chức năng chính | Bấm nút "Đặt lại" | 1. Form đang có thông tin.<br>2. Bấm nút "Đặt lại". | Toàn bộ các ô nhập liệu xóa trắng, khung xem trước quay về trạng thái rỗng ban đầu. | **Pass** |
+| **TM-03** | In hồ sơ dạng in | Chức năng chính | Bấm nút "In hồ sơ" | 1. Điền đủ hồ sơ hợp lệ.<br>2. Bấm nút "In hồ sơ". | Hộp thoại in trình duyệt kích hoạt; ẩn thanh điều hướng, footer và cột nhập liệu. | **Pass** |
+| **TM-EDGE-01** | Để trống trường bắt buộc | **Trường hợp biên 1** | Bỏ trống ô Họ tên hoặc Email | 1. Để trống thông tin.<br>2. Bấm "Tạo hồ sơ". | Hiển thị cảnh báo viền đỏ, chặn không cho tạo hồ sơ rỗng. | **Pass** |
+| **TM-EDGE-02** | Chuỗi ký tự vượt giới hạn | **Trường hợp biên 2** | Nhập chuỗi 300 ký tự vào ô "Mục tiêu" | 1. Nhập văn bản rất dài.<br>2. Bấm tạo hồ sơ. | Tự động bẻ dòng hợp lý (word-wrap), không làm tràn hay vỡ khung thẻ in. | **Pass** |
+| **TM-EDGE-03** | Chống mã độc kịch bản XSS | **Trường hợp biên 3** | Nhập `<script>alert('XSS')</script>` vào Họ tên | 1. Dán mã kịch bản vào form.<br>2. Bấm tạo hồ sơ. | Nội dung xử lý dạng chuỗi ký tự thuần túy, không kích hoạt hộp thoại script. | **Pass** |
+| **TM-EDGE-04** | Giá trị số không hợp lệ | **Trường hợp biên 4** | Nhập số sản phẩm là `-3` hoặc năm `2099` | 1. Nhập số âm hoặc năm tương lai.<br>2. Bấm tạo hồ sơ. | Bắt lỗi dữ liệu, thông báo yêu cầu nhập số nguyên dương hợp lệ. | **Pass** |
+
+### 1.2. Minh chứng hình ảnh lỗi trước và sau khi xử lý
+- **Trước khi xử lý:** Form không kiểm tra dữ liệu rỗng, bấm tạo hồ sơ không có bất kỳ thông báo lỗi nào.
+  ![Lỗi trước khi xử lý](loi-form-truoc-khi-validate.png).
+- **Sau khi xử lý:** Hệ thống đã bắt lỗi tính hợp lệ (Validation), xuất hiện viền đỏ và thông báo nhắc nhở người dùng nhập liệu.
+  ![Đã xử lý lỗi](form-da-xu-ly-validate.png).
