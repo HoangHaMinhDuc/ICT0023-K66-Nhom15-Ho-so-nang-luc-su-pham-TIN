@@ -1,9 +1,8 @@
 # Nguồn tham khảo
 ## 1. Tài liệu
-- Bootstrap 5.3.3: https://getbootstrap.com/docs/5.3/ (truy cập: 15/10/2026)
-- jQuery 3.7.1: https://api.jquery.com/ (truy cập: 15/10/2026)
+- Bootstrap 5.3.3: https://getbootstrap.com/docs/5.3/
+- jQuery 3.7.1: https://api.jquery.com/
 - MDN Web Docs (DOM, `addEventListener`, `window.print`): https://developer.mozilla.org/ 
-- Đề bài và yêu cầu học phần ICT0023 do giảng viên cung cấp.
 ## 2. Mã tham khảo
 Không sử dụng. Mã HTML/CSS/JS do nhóm tự viết; Bootstrap và jQuery nạp từ CDN (jsDelivr, cdnjs), không sao chép mã nguồn.
 ## 3. Ảnh/dữ liệu
