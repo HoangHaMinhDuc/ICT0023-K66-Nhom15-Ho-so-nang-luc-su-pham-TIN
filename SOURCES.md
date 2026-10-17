@@ -24,7 +24,7 @@ Không sử dụng. Mã HTML/CSS/JS do nhóm tự viết; Bootstrap và jQuery n
 | `sanpham1.jpg`, `sanpham5.jpg` | Poster/banner do nhóm thiết kế | Nhóm | Có |
 | `sanpham2.jpg`, `sanpham3.jpg`, `sanpham4.jpg`, `sanpham6.jpg` | Ảnh chụp màn hình sản phẩm web của nhóm | Nhóm | Không có người |
 | `logo.jpg` | Logo "Thiết kế Web – Nhóm 15" | Nhóm (công cụ thiết kế: điền) | Không có người |
-| `placeholder.jpg` | Nền chờ của khung ảnh | Nhóm tự vẽ bằng SVG, xuất `.jpg` | Không có người |
+| `placeholder.jpg` | Nền chờ của khung ảnh | Nhóm tự vẽ bằng AI, xuất `.jpg` | Không có người |
 | `icondayhoc.jpg`, `iconlaptrinh.jpg`, `iconhoso.jpg`, `cvtrong.jpg` | Biểu tượng và ảnh minh họa | Minh họa có hỗ trợ AI (xem mục 4), nhóm chọn và chỉnh màu theo bảng màu | Không có người |
 ## 4. Công cụ AI
 | Công cụ | Prompt chính | Tiếp nhận / loại bỏ | Cách kiểm chứng |
