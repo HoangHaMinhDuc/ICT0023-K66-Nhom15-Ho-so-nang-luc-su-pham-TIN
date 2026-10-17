@@ -123,7 +123,6 @@ Người lập: Tester
 | **TC-EDGE-04** | Sai định dạng Email | Giá trị không hợp lệ | `abc@`, `abc.com`, `abc@gmail` (thiếu phần mở rộng domain) | Trình duyệt kích hoạt cảnh báo sai chuẩn email. |
 | **TC-EDGE-05** | Số điện thoại chứa ký tự | Định dạng số | `0987abc123`, `098-765-432` | Báo lỗi định dạng chỉ chấp nhận đúng 10 chữ số tiêu chuẩn. |
 
-
 # KẾ HOẠCH KIỂM THỬ GIAI ĐOẠN v0.4:
 ## 1. Bảng ca kiểm thử chi tiết (Test Matrix) & Minh chứng xử lý lỗi
 
@@ -140,7 +139,6 @@ Người lập: Tester
 
 ### 1.2. Minh chứng hình ảnh lỗi trước và sau khi xử lý
 - **Trước khi xử lý:** Form không kiểm tra dữ liệu rỗng, bấm tạo hồ sơ không có bất kỳ thông báo lỗi nào.
-  ![Lỗi trước khi xử lý](loi-form-truoc-khi-validate.jpg)
-
+![Lỗi trước khi xử lý](loi-form-truoc-khi-validate.jpg)
 - **Sau khi xử lý:** Hệ thống đã bắt lỗi tính hợp lệ (Validation), xuất hiện viền đỏ và thông báo nhắc nhở người dùng nhập liệu.
-  ![Đã xử lý lỗi](form-da-xu-ly-validate.jpg).
+![Đã xử lý lỗi](form-da-xu-ly-validate.jpg).
