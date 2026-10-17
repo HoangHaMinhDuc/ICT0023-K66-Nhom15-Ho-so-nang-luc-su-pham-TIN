@@ -15,6 +15,7 @@ Website tĩnh dùng HTML, CSS, Bootstrap 5.3, JavaScript, jQuery 3.7; chạy ho�
 | Ngô Thuỳ Ngân | ngannt.k66sptin@ ẩn danh | Tester | Kiểm thử giao diện, responsive, chính tả; rà soát nội dung |
 | Hoàng Hà Minh Đức | duchhm.k66sptin@ ẩn danh | Coodinator | Lập kế hoạch tiến độ, chia việc, kết nối thành viên |
 | Hà Tuấn Hưng | hunght.k66sptin@ ẩn danh| Navigator | Chỉ dẫn, cảnh báo rủi ro, kiểm định chất lượng |
+
 Chi tiết từng người, issue/PR: xem `CONTRIBUTIONS.md`.
 
 ## Cấu trúc website (6 trang dùng chung menu và chân trang)
