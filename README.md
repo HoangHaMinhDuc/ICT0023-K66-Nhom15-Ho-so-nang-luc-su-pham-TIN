@@ -22,7 +22,7 @@ Chi tiết từng người, issue/PR: xem `CONTRIBUTIONS.md`.
 | Trang | Nội dung |
 |---|---|
 | `index.html` | Trang chủ: giới thiệu nhóm, 3 thẻ "Nhóm làm gì?", số liệu, ảnh hoạt động |
-| `thanhvien.html` | Hồ sơ 4 thành viên: tìm kiếm, lọc, cửa sổ chi tiết (modal) |
+| `thanhvien.html` | Hồ sơ 6 thành viên mẫu: tìm kiếm, lọc, cửa sổ chi tiết (modal) |
 | `sanpham.html` | 6 sản phẩm: tìm kiếm, lọc theo loại/kỹ năng, sắp xếp, modal chi tiết |
 | `kynang.html` | Bảng 8 kỹ năng (bấm tiêu đề cột để sắp xếp) và 8 câu hỏi đáp (accordion, tìm bằng jQuery) |
 | `congcu.html` | **Công cụ tương tác:** Tạo hồ sơ nhanh, xem trước tức thời, in |
