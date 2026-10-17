@@ -17,7 +17,7 @@ Không sử dụng. Mã HTML/CSS/JS do nhóm tự viết; Bootstrap và jQuery n
 ### 3.2 Ảnh nhóm tự chụp / tự thiết kế
 | Tệp | Nội dung | Tác giả | Người trong ảnh đồng ý |
 |---|---|---|---|
-| `thanhvien1.jpg` … `thanhvien4.jpg` | Chân dung 4 thành viên | Nhóm tự chụp | Có (chính chủ) |
+| `thanhvien1.jpg` … `thanhvien6.jpg` | Chân dung 6 thành viên | Nhóm tự chụp | Có (chính chủ) |
 | `hoatdong1.jpg`, `hoatdong2.jpg`, `hoatdong3.jpg` | Giảng thử, thuyết trình, lập trình | Nhóm tự chụp | Có |
 | `bannerthanhvien.jpg`, `bannerkynang.jpg` | Ảnh thành viên nhóm ở đầu trang Thành viên, Kỹ năng | Nhóm tự chụp | Có |
 | `bannersanpham.jpg` | Ảnh tập thể ở đầu trang Sản phẩm | Nhóm tự chụp | Có (nhóm xác nhận) |
