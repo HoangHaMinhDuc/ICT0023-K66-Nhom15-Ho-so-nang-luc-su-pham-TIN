@@ -2,7 +2,7 @@
 ## 1. Tài liệu
 - **Bootstrap 5.3.3:** https://getbootstrap.com/docs/5.3/ (truy cập: 15/10/2026)
 - **jQuery 3.7.1:** https://api.jquery.com/ (truy cập: 15/10/2026)
-- **MDN Web Docs (DOM, `addEventListener`, `window.print`):** https://developer.mozilla.org/ (truy cập: 15/10/2026)
+- **MDN Web Docs (DOM, `addEventListener`, `window.print`):** https://developer.mozilla.org/
 ## 2. Mã tham khảo
 Không sử dụng mã nguồn bên ngoài. Mã HTML/CSS/JS do nhóm tự viết; Bootstrap và jQuery nạp trực tiếp từ CDN (jsDelivr, cdnjs).
 
@@ -10,7 +10,7 @@ Không sử dụng mã nguồn bên ngoài. Mã HTML/CSS/JS do nhóm tự viết
 - **Phông chữ:** Be Vietnam Pro (Google Fonts), giấy phép SIL Open Font License.
 - **Dữ liệu:** Thành viên, sản phẩm, kỹ năng, hỏi đáp do nhóm tự biên soạn. Dữ liệu thành viên là thông tin thực tế của các bạn trong nhóm và đã được đồng ý công bố.
 
- ### 3.1 Ảnh lấy từ mạng (3 ảnh, truy cập 15/10/2026)
+ ### 3.1 Ảnh lấy từ mạng
 | Tệp | Chỗ dùng | Nguồn | Tìm bằng | Giấy phép |
 |---|---|---|---|---|
 | `anhbia.jpg` | Ảnh bìa trang chủ (toàn cảnh Trường ĐH Tây Bắc, 1900×1124) | Ảnh "Điểm chuẩn Trường Đại học Tây Bắc 2026" trên trang Xây Dựng Chính Sách, Pháp Luật | Google Hình ảnh: "đại học tây bắc" | Minh họa học tập, phi thương mại |
@@ -33,7 +33,7 @@ Không sử dụng mã nguồn bên ngoài. Mã HTML/CSS/JS do nhóm tự viết
 ## 4. Công cụ AI
 | Công cụ | Ngày | Prompt chính | Tiếp nhận / loại bỏ | Cách kiểm chứng |
 |---|---|---|---|---|
-| ChatGPT / Copilot | 15/10/2026 | Tạo biểu tượng sách–bút, hồ sơ, mã code theo màu xanh phấn/vàng | Nhận 4 ảnh minh họa `icondayhoc`, `iconlaptrinh`, `iconhoso`, `cvtrong`; loại bản không khớp bảng màu | Kiểm tra hiển thị thực tế 56×56 và thẻ `alt` |
-| Claude (Anthropic) | 15/10/2026 | Rà soát yêu cầu đề bài và viết lại `README.md`, `SOURCES.md`, `CONTRIBUTIONS.md` | Nhận khung và câu chữ tài liệu; loại các mô tả không có trong mã nguồn | Nhóm đối chiếu từng mục với mã nguồn và ảnh chụp màn hình |
-
+| ChatGPT / Gemini | Tạo biểu tượng sách–bút, hồ sơ, mã code theo màu xanh phấn/vàng | Nhận 4 ảnh minh họa `icondayhoc`, `iconlaptrinh`, `iconhoso`, `cvtrong`; loại bản không khớp bảng màu | Kiểm tra hiển thị thực tế 56×56 và thẻ `alt` |
+| Claude (Anthropic) | Rà soát yêu cầu đề bài và viết lại `README.md`, `SOURCES.md`, `CONTRIBUTIONS.md` | Nhận khung và câu chữ tài liệu; loại các mô tả không có trong mã nguồn | Nhóm đối chiếu từng mục với mã nguồn và ảnh chụp màn hình |
+| Notebooklm | Dà soát tài liệu
 *Mã nguồn website do nhóm tự viết và hoàn thiện, AI chỉ hỗ trợ rà soát cấu trúc tài liệu và gợi ý giải pháp.*
