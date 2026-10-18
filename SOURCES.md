@@ -1,5 +1,5 @@
 # Nguồn tham khảo - Dự án ICT0023 Nhóm 15
- **Repository:** `ICT0023-K66-Nhom15-HoSoNangLucSuPhamTin`
+ **Repository:**ICT0023-K66-Nhom15-Ho-so-nang-luc-nhom-sinh-vien-su-pham-Tin
 ---
 ## 1. Tài liệu
 - **W3Schools (HTML, CSS, JavaScript, Bootstrap 5, jQuery):** https://www.w3schools.com/ (Truy cập: 2/10/2026)
