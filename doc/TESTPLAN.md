@@ -142,3 +142,47 @@ Người lập: Tester
 ![Lỗi trước khi xử lý](loi-form-truoc-khi-validate.jpg)
 - **Sau khi xử lý:** Hệ thống đã bắt lỗi tính hợp lệ (Validation), xuất hiện viền đỏ và thông báo nhắc nhở người dùng nhập liệu.
 ![Đã xử lý lỗi](form-da-xu-ly-validate.jpg).
+
+# TỔNG KẾT KIỂM THỬ CHẤT LƯỢNG & ĐÁNH GIÁ ĐỘ ỔN ĐỊNH HỆ THỐNG
+## I. TỔNG HỢP TOÀN BỘ KẾT QUẢ KIỂM THỬ (TEST MATRIX)
+
+Hệ thống đã trải qua kiểm thử toàn diện từ giai đoạn xây dựng khung tĩnh đến tích hợp chức năng tương tác trên trang `congcu.html` và các trang vệ tinh (`index.html`, `thanhvien.html`, `kynang.html`, `sanpham.html`, `lienhe.html`):
+
+| Mã ca (ID) | Hạng mục kiểm thử | Kịch bản kiểm thử | Dữ liệu đầu vào (Input) | Kết quả mong đợi (Expected Output) | Trạng thái |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| **TC-01** | Điều hướng bàn phím | Kiểm thử phím Tab, Shift + Tab, Enter | Phím điều hướng tiêu chuẩn | Tiêu điểm (:focus) hiển thị rõ ràng, di chuyển tuần tự qua menu, không bị kẹt phím | **ĐẠT (PASS)** |
+| **TC-02** | Cú pháp HTML5 (W3C) | Kiểm tra qua validator.w3.org | Toàn bộ mã nguồn các trang | 0 lỗi Error, phân cấp tiêu đề h1-h3 hợp lý, 100% thẻ img có thuộc tính alt | **ĐẠT (PASS)** |
+| **TC-03** | Co giãn Responsive | F12 Device Toolbar (375px, 768px, 1200px) | Kích thước Mobile, Tablet, PC | Navbar thu gọn nút 3 gạch mượt mà, lưới Bootstrap chia cột chuẩn, không tràn ngang | **ĐẠT (PASS)** |
+| **TC-04** | Tương thích trình duyệt | Chrome, Edge, Cốc Cốc & Ẩn danh | Cache trống (Incognito) | CSS tải đầy đủ, độ tương phản màu tốt, font chữ chuẩn, không gián đoạn trải nghiệm | **ĐẠT (PASS)** |
+| **TC-05** | Nút "Dùng thử" | Điền mẫu tự động vào Form | Bấm nút `#cv-sample` | Tự động điền đầy đủ 8 trường dữ liệu mẫu hợp lệ, thanh tiến độ cập nhật tức thì | **ĐẠT (PASS)** |
+| **TC-06** | Nút "Đặt lại" | Xóa trắng form hồ sơ | Bấm nút `#cv-reset` | Xóa sạch các trường nhập liệu, khung xem trước (preview) quay về trạng thái rỗng ban đầu | **ĐẠT (PASS)** |
+| **TC-07** | Nút "In hồ sơ" | Chức năng in ấn dạng bản cứng | Bấm nút `#cv-print` | Bật hộp thoại `window.print()`, CSS `@media print` ẩn navbar/footer/form (`no-print`) | **ĐẠT (PASS)** |
+| **TC-EDGE-01** | Ngoại lệ: Dữ liệu rỗng | Bỏ trống các trường bắt buộc | Nhấn "Tạo hồ sơ" khi form trống | Cảnh báo viền đỏ (`is-invalid`), hiển thị hộp thoại thông báo lỗi, chặn tạo hồ sơ rỗng | **ĐẠT (PASS)** |
+| **TC-EDGE-02** | Ngoại lệ: Chuỗi quá dài | Kiểm tra độ dài biên văn bản | Nhập > 300 ký tự vào ô Mục tiêu | Tự động ngắt dòng hợp lý (`word-wrap`), không làm tràn vỡ khung viền thẻ in A4 | **ĐẠT (PASS)** |
+| **TC-EDGE-03** | Ngoại lệ: Mã độc XSS | Kiểm tra an toàn ký tự đặc biệt | Nhập `<script>alert('XSS')</script>` | Hiển thị chuỗi văn bản thuần (plain text), mã độc không bị kích hoạt thực thi | **ĐẠT (PASS)** |
+| **TC-EDGE-04** | Ngoại lệ: Số âm / Phi lý | Kiểm tra miền giá trị số | Nhập số sản phẩm là -5, năm 1800 | Bắt lỗi định dạng số nguyên dương hợp lệ, yêu cầu người dùng chỉnh sửa | **ĐẠT (PASS)** |
+
+## II. HÌNH ẢNH MINH CHỨNG XỬ LÝ LỖI (TRƯỚC & SAU KHI CAN THIỆP)
+
+### 1. Minh chứng xử lý lỗi kiểm tra tính hợp lệ dữ liệu (Form Validation)
+- **Trước khi xử lý (Lỗi):** Người dùng bấm nút "Tạo hồ sơ" khi chưa điền dữ liệu, form không đưa ra phản hồi hay viền đỏ cảnh báo nào, dẫn tới khung xem trước bị rỗng.  
+  *(Chèn ảnh: `loi-form-truoc-khi-validate.jpg` minh họa form trống không có phản hồi)*
+- **Sau khi xử lý (Khắc phục hoàn toàn):** Đã tích hợp kiểm tra dữ liệu qua Bootstrap (`novalidate`, `invalid-feedback`, `is-invalid`). Khi để trống, các ô viền đỏ rực và thông báo lỗi hiển thị rõ ràng.  
+  *(Chèn ảnh: `form-da-xu-ly-validate.jpg` minh họa viền đỏ và thông báo lỗi)*
+
+### 2. Minh chứng kiểm thử Responsive & Chế độ in (Print Preview)
+- **Minh chứng giao diện co giãn:** Ảnh chụp chế độ giả lập điện thoại (375px) hiển thị menu hamburger và bố cục dọc không bị vỡ.
+- **Minh chứng chế độ in:** Ảnh chụp hộp thoại Print Preview thể hiện tờ hồ sơ ngay ngắn, các thành phần thừa trên website đã được ẩn gọn gàng bằng lớp CSS `.no-print`.
+
+## III. ĐÁNH GIÁ ĐỘ ỔN ĐỊNH VÀ CÁC TRƯỜNG HỢP NGOẠI LỆ ĐÃ XỬ LÝ
+
+### 1. Đánh giá độ ổn định của hệ thống (System Stability)
+- **Hoạt động hoàn toàn Client-Side:** Website không sử dụng cơ sở dữ liệu hay lưu trữ cục bộ ngoài quy định (`localStorage`/`sessionStorage`), đảm bảo tính bảo mật và độc lập cao; mỗi phiên mở trang đều khởi tạo dữ liệu mới sạch sẽ.
+- **Tốc độ phản hồi & Tương tác DOM:** Thao tác cập nhật khung xem trước và thanh tiến độ hoàn thành ngay tức thì (< 0.1 giây), không xuất hiện hiện tượng giật lag hay treo trang.
+- **Độ tin cậy của mã nguồn (Clean Console):** Kiểm tra toàn diện trên Developer Console (F12) qua tất cả các trang, không ghi nhận bất kỳ cảnh báo đỏ nào (0 JavaScript Errors / Uncaught Exceptions).
+
+### 2. Các trường hợp ngoại lệ (Edge Cases & Exceptions) đã xử lý thành công
+1. **Ngoại lệ dữ liệu trống (Empty Input Handling):** Cơ chế xác thực chặn ngay lập tức hành vi gửi form rỗng, hướng dẫn người dùng nhập đúng các trường thông tin bắt buộc.
+2. **Ngoại lệ xung đột giao diện in ấn (Print Media Queries):** Xử lý triệt để tình trạng tiêu đề trang web, thanh menu và các nút bấm bị in ra giấy làm mất thẩm mỹ tờ hồ sơ cá nhân nhờ cơ chế `.no-print`.
+3. **Ngoại lệ ký tự đặc biệt & Bảo mật (XSS Prevention):** Dữ liệu chuỗi nhập từ form khi truyền sang khung xem trước được gán qua cơ chế an toàn (`textContent`), vô hiệu hóa hoàn toàn nguy cơ chèn mã kịch bản gây hại.
+4. **Ngoại lệ ảnh tải lên (File Handling):** Thuộc tính `accept="image/*"` giới hạn đúng định dạng ảnh; cơ chế đọc file cục bộ qua `FileReader` hiển thị ảnh xem trước an toàn mà không cần đẩy lên máy chủ.
