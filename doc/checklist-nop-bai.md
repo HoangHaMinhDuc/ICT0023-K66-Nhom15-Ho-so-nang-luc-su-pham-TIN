@@ -1,7 +1,7 @@
 # Checklist nộp bài (Nhóm 15)
 
 ## GitHub
-- [x] Repository Public tên `ICT0023-K66-Nhom15-HoSoNangLucSuPhamTin`, đủ 4 thành viên, mỗi người tài khoản riêng
+- [x] Repository Public tên `ICT0023-K66-Nhom15-HoSoNangLucSuPhamTin`, đủ 6 thành viên, mỗi người tài khoản riêng
 - [x] README.md, SOURCES.md, CONTRIBUTIONS.md ở thư mục gốc, không còn chữ "(điền)"
 - [x] Có issue/task, branch theo chức năng, Pull Request có người khác review
 - [x] Commit nhỏ, đúng nội dung; không commit rỗng
